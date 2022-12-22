@@ -1,0 +1,116 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: linear-gradient(to right, #1877f2, #0A3871); 
+    font-family: inherit, sans-serif;
+  }
+  .header h1{
+    text-align: right;
+    margin: 20px 20px 30px 20px;
+  }
+  .main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .titulo {
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    margin: auto;
+    color: #FFFFFF;
+    font-weight: normal;
+  }
+  .titulo span {
+    font-weight: bold;
+  }
+  
+  .box {
+    padding: 20px;
+    margin: 0 20px 0 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 0.5rem;
+    height: auto;
+  }
+  
+  label {
+    color: white;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .info{
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container:last-child {
+    margin-right: 0;
+  }
+  
+  .btn {
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    background-color: #1877f2;
+    padding: 0 16px;
+    margin-top: 20px;
+    margin-right: 18px;
+    border-radius: 6px;
+    width: 332px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color:#0A3871;
+  }
+  .text-input {
+    border-radius: 5px;
+    border: 2px solid #1877f2;
+    display: block;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+    font-family: sans-serif;
+  }
+  .error {
+    background-color: #58afff;    
+    padding: 15px;    
+    font-size: 18px;   
+    margin: 10px auto 0;
+    color: white;   
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;    
+    border-radius: 10px;
+  }
+  
+  .footer {
+    margin: 50px 0px 5px 0px ;
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;  
+  }
+  .footer span {  
+    font-weight: bold;
+    text-transform: uppercase;
+  }

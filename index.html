@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptando textos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="img"><img class="logoOracke" src="logoc.svg"></h1>
+            <h2 class="titulo">Encriptador de texto</h2>
+        </header>
+        
+        <main class="main">
+            <section class="from-box">
+                <form id="formulario">
+                    <label for="input-texto"><h1 class="info">Solo letras minusculas, sin acentos</h1></label>
+                    <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" rows="25" cols="10" min="1" onkeyup="this.value=this.value.toLocalLowerCase()"></textarea>
+                    <div class="button-container">
+                        <input class="btn" type="submit" value="Encriptar" id="btn-encriptar">
+                        <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar">
+                    </div>
+                </form>
+            </section>
+            <section class="msg-box">
+                <label for="mensaje-texto"><h2 class="info">Mensaje encriptado: </h2></label>
+                <textarea class="text-input" name="mensaje-texto" id="mensaje-texto" rows="25" cols="10"></textarea>
+                <input class="btn" type="submit" value="Copiar texto" id="btn-copy">
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Hecho por <span>Clemente Mauricio Mendez Garcia</span> &copy; Copyright 2022</p>
+        </footer>
+        <script src="script.js"></script>
+        <script src="snow.js"></script>
+    </body>
+</html> 
