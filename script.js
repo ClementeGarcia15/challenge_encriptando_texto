@@ -3,6 +3,7 @@ const btnEncriptar = document.getElementById('btn-encriptar');
 const btnDesencriptar = document.getElementById('btn-desencriptar');
 const inputResultado = document.getElementById('mensaje-texto');
 const btnCopiar = document.getElementById('btn-copy');
+const btnborrar = document.getElementById('btn-borrar');
 const soloLetras ='^[a-z !ñ]+$';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -96,3 +97,19 @@ function copiarTexto(e) {
     alert("Mensaje copiado: " + mensaje);
 
 }
+function Limpiar(){
+  inputTexto.value = "";
+  inputResultado.value = "";
+}
+function foco(){
+  inputTexto.focus();
+}
+
+function borrar(){
+  inputTexto.Placeholder = "Ingrese el texto aqui";
+  inputResultado.Placeholder = "";
+  Limpiar()
+  foco();
+}
+
+btnborrar.addEventListener("click", borrar);
