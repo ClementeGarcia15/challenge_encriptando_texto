@@ -127,7 +127,7 @@ html {
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 7680px) {
+  @media screen and (max-width: 480px) {
     Main{
       flex-wrap: wrap;
     }
