@@ -51,18 +51,9 @@ html {
     font-size: 18px;
     font-style: italic;
   }
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-  }
   .button-container:last-child {
     margin-right: 0;
   }
-  .borrar{
-    display: flex;
-    justify-content: space-between;
-  }
-  
   .btn {
     border: none;
     color: #FFFFFF;
@@ -87,7 +78,6 @@ html {
     line-height: 48px;
     background-color: #1877f2;
     padding: 7px 16px;
-    margin: auto;
     border-radius: 6px;
     width: 332px;
     cursor: pointer;
@@ -135,4 +125,11 @@ html {
   .footer span {  
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 7680px) {
+    Main{
+      flex-wrap: wrap;
+    }
+    
   }
