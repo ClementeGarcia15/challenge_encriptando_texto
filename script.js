@@ -22,11 +22,11 @@ function encriptar(e) {
     let nuevasPalabras = [];
     
     for (let palabra of palabras) {
-      palabra = palabra.replaceAll('e','enter');
-      palabra = palabra.replaceAll('i','imes');
-      palabra = palabra.replaceAll('a','ai');
-      palabra = palabra.replaceAll('o','ober');
-      palabra = palabra.replaceAll('u','ufat');
+      palabra = palabra.replaceAll(/e/,/enter/);
+      palabra = palabra.replaceAll(/i/,/imes/);
+      palabra = palabra.replaceAll(/a/,/ai/);
+      palabra = palabra.replaceAll(/o/,/ober/);
+      palabra = palabra.replaceAll(/u/,/ufat/);
       
       nuevasPalabras.push(palabra);
     }
