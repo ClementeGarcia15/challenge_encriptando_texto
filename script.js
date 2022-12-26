@@ -50,11 +50,11 @@ function desencriptar(event) {
     let nuevasPalabras = [];
 
     for (let palabra of palabras) {
-      palabra = palabra.replaceAll('enter','e');
-      palabra = palabra.replaceAll('imes','i');
-      palabra = palabra.replaceAll('ai','a');
-      palabra = palabra.replaceAll('ober','o');
-      palabra = palabra.replaceAll('ufat','u');
+      palabra = palabra.replaceAll(/enter/,/e/);
+      palabra = palabra.replaceAll(/imes/,/i/);
+      palabra = palabra.replaceAll(/ai/,/a/);
+      palabra = palabra.replaceAll(/ober/,/o/);
+      palabra = palabra.replaceAll(/ufat/,/u/);
       nuevasPalabras.push(palabra);
     }
 
