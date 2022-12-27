@@ -22,11 +22,11 @@ function encriptar(e) {
     let nuevasPalabras = [];
     
     for (let palabra of palabras) {
-      palabra = palabra.replaceAll(/e/,/enter/);
-      palabra = palabra.replaceAll(/i/,/imes/);
-      palabra = palabra.replaceAll(/a/,/ai/);
-      palabra = palabra.replaceAll(/o/,/ober/);
-      palabra = palabra.replaceAll(/u/,/ufat/);
+      palabra = palabra.replace(/e/,/enter/);
+      palabra = palabra.replace(/i/,/imes/);
+      palabra = palabra.replace(/a/,/ai/);
+      palabra = palabra.replace(/o/,/ober/);
+      palabra = palabra.replace(/u/,/ufat/);
       
       nuevasPalabras.push(palabra);
     }
@@ -50,11 +50,11 @@ function desencriptar(event) {
     let nuevasPalabras = [];
 
     for (let palabra of palabras) {
-      palabra = palabra.replaceAll(/enter/,/e/);
-      palabra = palabra.replaceAll(/imes/,/i/);
-      palabra = palabra.replaceAll(/ai/,/a/);
-      palabra = palabra.replaceAll(/ober/,/o/);
-      palabra = palabra.replaceAll(/ufat/,/u/);
+      palabra = palabra.replace(/enter/,/e/);
+      palabra = palabra.replace(/imes/,/i/);
+      palabra = palabra.replace(/ai/,/a/);
+      palabra = palabra.replace(/ober/,/o/);
+      palabra = palabra.replace(/ufat/,/u/);
       nuevasPalabras.push(palabra);
     }
 
